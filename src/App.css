@@ -1,41 +1,3 @@
-:where(.css-dev-only-do-not-override-gzal6t).ant-layout.ant-layout-has-sider
-  > .ant-layout,
-:where(.css-dev-only-do-not-override-gzal6t).ant-layout.ant-layout-has-sider
-  > .ant-layout-content {
-  margin: 0px;
-  color: rgb(29, 36, 56);
-  font-size: 14px;
-  font-family: Montserrat, sans-serif;
-  font-weight: 400;
-  line-height: 1.5;
-  background-color: rgb(243, 244, 249);
-}
-
-:where(.css-dev-only-do-not-override-gzal6t).ant-layout
-  .ant-layout-sider-children {
-  height: 100%;
-  margin-top: -0.1px;
-  padding-top: 0.1px;
-  background: white !important;
-}
-
-:where(.css-gzal6t).ant-layout .ant-layout-sider {
-  position: relative;
-  min-width: 0;
-  background: white !important;
-  transition: all 0.2s, background 0s;
-}
-
-:where(.css-gzal6t).ant-layout .ant-layout-sider-trigger {
-  display: none !important;
-}
-
-:where(.css-dev-only-do-not-override-gzal6t).ant-layout
-  .ant-layout-sider-children
-  .ant-menu.ant-menu-inline-collapsed {
-  background-color: white !important;
-}
-
 .all-card {
   border-radius: 6px;
 }
@@ -340,24 +302,6 @@
   display: none;
 }
 
-.sidemenu {
-  transition: width 0.3s ease;
-}
-
-.sidemenu.collapsed {
-  width: 80px; /* Set your desired collapsed width */
-}
-
-.sidemenu.expanded {
-  width: 200px; /* Set your desired expanded width */
-}
-
-.logo-img {
-  height: 33px;
-  width: 100%;
-  margin-top: 20px;
-}
-
 .User-button button {
   display: inline-flex;
   -webkit-box-align: center;
@@ -452,12 +396,33 @@
   display: none;
 }
 
+.spin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logosvg {
+  height: 33px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+
+:where(.css-dev-only-do-not-override-gzal6t).ant-layout .ant-layout-sider {
+  background: white;
+  height: 200vh;
+}
+
 :where(.css-dev-only-do-not-override-gzal6t).ant-menu-light
   .ant-menu-item-selected,
 :where(.css-dev-only-do-not-override-gzal6t).ant-menu-light
   > .ant-menu
   .ant-menu-item-selected {
-  background-color: transparent !important;
+  background-color: transparent;
 }
 
 :where(.css-dev-only-do-not-override-gzal6t).ant-menu-light:not(
@@ -470,111 +435,19 @@
   background-color: transparent;
 }
 
-.logosvg {
-  width: 31px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  margin-top: 24px;
-  margin-bottom: 23px;
-}
-
-/* Add your common styles for the SVG icon */
-:where(.css-dev-only-do-not-override-gzal6t)
-  .ant-menu
-  .ant-menu-item
-  .ant-menu-item-icon
-  svg {
-  user-select: none;
-  display: inline-block;
-  flex-shrink: 0;
-  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  fill: rgb(148, 164, 196);
-}
-
-/* Add styles for the selected state of the SVG icon */
-:where(.css-dev-only-do-not-override-gzal6t)
-  .ant-menu
-  .ant-menu-item-selected
-  .ant-menu-item-icon
-  svg {
-  fill: rgb(36, 153, 239);
-}
-
-/* Add styles for the hover state of the SVG icon (optional) */
-:where(.css-dev-only-do-not-override-gzal6t)
-  .ant-menu
-  .ant-menu-item:hover
-  .ant-menu-item-icon
-  svg {
-  fill: rgb(36, 153, 239);
-}
-
-:where(.css-dev-only-do-not-override-gzal6t).ant-layout .ant-layout-sider {
-  /* position: relative; */
-  min-width: 0;
-  background: transparent !important;
-  transition: all 0.2s, background 0s;
-}
-:where(.css-dev-only-do-not-override-gzal6t).ant-layout
-  .ant-layout-sider-children {
-  top: 0;
-  left: 0px;
-  width: 80px;
-  height: 100%;
-  position: fixed !important;
-  box-shadow: rgba(0, 0, 0, 0.07) 0px 0px 21px 1px;
-  transition: left 0.3s ease 0s;
-  z-index: 99;
-  background-color: rgb(255, 255, 255);
-}
-
-:where(.css-dev-only-do-not-override-gzal6t).ant-drawer-left
-  > .ant-drawer-content-wrapper {
-  box-shadow: none !important;
-}
-
 :where(.css-dev-only-do-not-override-gzal6t).ant-drawer .ant-drawer-body {
-  padding: 0px !important;
+  padding: 0;
 }
 
-.spin {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-:where(.css-dev-only-do-not-override-gzal6t).ant-layout .ant-layout-sider {
-  position: relative;
-  min-width: 0;
-  background: transparent !important;
-  transition: all 0.2s, background 0s;
-}
-
-:where(.css-dev-only-do-not-override-gzal6t).ant-tabs
-  > .ant-tabs-nav
-  .ant-tabs-nav-more {
-  display: none !important;
-}
-
-.ant-spin-nested-loading > div > .ant-spin {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.ant-drawer-content-wrapper {
+  width: 90px;
 }
 
 .ant-drawer-close {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  margin: 0 auto !important;
-}
-
-.drawer {
-  width: 25% !important;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin: 0 auto;
 }
 
 :where(
@@ -587,13 +460,7 @@
   ).ant-menu-light.ant-menu-root.ant-menu-vertical,
 :where(.css-dev-only-do-not-override-gzal6t).ant-menu-light
   > .ant-menu.ant-menu-root.ant-menu-vertical {
-  border-inline-end: none !important;
-  border: none !important;
-  margin: 0 auto;
-}
-
-:where(.css-gzal6t).ant-drawer .ant-drawer-body {
-  padding: 0px !important;
+  border: none;
 }
 
 @media (max-width: 768px) {
