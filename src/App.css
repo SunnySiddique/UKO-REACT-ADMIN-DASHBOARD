@@ -367,9 +367,7 @@
   font-weight: 500;
   padding: 0px 5px;
   border-radius: 8px;
-  border: 1px solid rgb(229, 234, 242);
   color: rgb(29, 36, 56);
-  background-color: rgb(255, 255, 255);
   margin-bottom: 20px;
 }
 
@@ -414,7 +412,6 @@
 
 :where(.css-dev-only-do-not-override-gzal6t).ant-layout .ant-layout-sider {
   background: white !important;
-  height: 200vh !important;
 }
 
 :where(.css-gzal6t).ant-menu-light .ant-menu-item-selected,
@@ -422,17 +419,15 @@
   background-color: transparent !important;
 }
 
-:where(.css-dev-only-do-not-override-gzal6t).ant-menu-light:not(
-    .ant-menu-horizontal
-  )
+:where(.css-gzal6t).ant-menu-light:not(.ant-menu-horizontal)
   .ant-menu-item:not(.ant-menu-item-selected):hover,
-:where(.css-dev-only-do-not-override-gzal6t).ant-menu-light
+:where(.css-gzal6t).ant-menu-light
   > .ant-menu:not(.ant-menu-horizontal)
   .ant-menu-item:not(.ant-menu-item-selected):hover {
   background-color: transparent !important;
 }
 
-:where(.css-dev-only-do-not-override-gzal6t).ant-drawer .ant-drawer-body {
+:where(.css-gzal6t).ant-drawer .ant-drawer-body {
   padding: 0 !important;
 }
 
@@ -466,6 +461,7 @@
 
 :where(.css-gzal6t).ant-layout .ant-layout-sider {
   background: #fff !important;
+  height: 200vh;
 }
 
 @media (max-width: 768px) {
