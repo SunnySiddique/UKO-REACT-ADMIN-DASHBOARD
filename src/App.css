@@ -459,6 +459,10 @@
   height: 200vh;
 }
 
+:where(.css-gzal6t).ant-drawer .ant-drawer-header {
+  margin: 0 auto;
+}
+
 @media (max-width: 768px) {
   .sidemenu {
     display: none;
