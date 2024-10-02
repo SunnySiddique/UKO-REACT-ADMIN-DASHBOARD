@@ -442,17 +442,12 @@
   margin: 0 auto;
 }
 
-:where(
-    .css-dev-only-do-not-override-gzal6t
-  ).ant-menu-light.ant-menu-root.ant-menu-inline,
-:where(.css-dev-only-do-not-override-gzal6t).ant-menu-light
-  > .ant-menu.ant-menu-root.ant-menu-inline,
-:where(
-    .css-dev-only-do-not-override-gzal6t
-  ).ant-menu-light.ant-menu-root.ant-menu-vertical,
-:where(.css-dev-only-do-not-override-gzal6t).ant-menu-light
-  > .ant-menu.ant-menu-root.ant-menu-vertical {
+:where(.css-gzal6t).ant-menu-light.ant-menu-root.ant-menu-inline,
+:where(.css-gzal6t).ant-menu-light > .ant-menu.ant-menu-root.ant-menu-inline,
+:where(.css-gzal6t).ant-menu-light.ant-menu-root.ant-menu-vertical,
+:where(.css-gzal6t).ant-menu-light > .ant-menu.ant-menu-root.ant-menu-vertical {
   border: none !important;
+  border-inline-end: none;
 }
 
 .ant-layout-sider-trigger {
