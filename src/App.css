@@ -413,8 +413,8 @@
 }
 
 :where(.css-dev-only-do-not-override-gzal6t).ant-layout .ant-layout-sider {
-  background: white;
-  height: 200vh;
+  background: white !important;
+  height: 200vh !important;
 }
 
 :where(.css-dev-only-do-not-override-gzal6t).ant-menu-light
@@ -422,7 +422,7 @@
 :where(.css-dev-only-do-not-override-gzal6t).ant-menu-light
   > .ant-menu
   .ant-menu-item-selected {
-  background-color: transparent;
+  background-color: transparent !important;
 }
 
 :where(.css-dev-only-do-not-override-gzal6t).ant-menu-light:not(
@@ -432,7 +432,7 @@
 :where(.css-dev-only-do-not-override-gzal6t).ant-menu-light
   > .ant-menu:not(.ant-menu-horizontal)
   .ant-menu-item:not(.ant-menu-item-selected):hover {
-  background-color: transparent;
+  background-color: transparent !important;
 }
 
 :where(.css-dev-only-do-not-override-gzal6t).ant-drawer .ant-drawer-body {
@@ -440,7 +440,7 @@
 }
 
 .ant-drawer-content-wrapper {
-  width: 90px;
+  width: 90px !important;
 }
 
 .ant-drawer-close {
@@ -461,6 +461,14 @@
 :where(.css-dev-only-do-not-override-gzal6t).ant-menu-light
   > .ant-menu.ant-menu-root.ant-menu-vertical {
   border: none;
+}
+
+.ant-layout-sider-trigger {
+  display: none !important;
+}
+
+:where(.css-gzal6t).ant-layout .ant-layout-sider {
+  background: #fff !important;
 }
 
 @media (max-width: 768px) {
