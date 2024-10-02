@@ -417,11 +417,8 @@
   height: 200vh !important;
 }
 
-:where(.css-dev-only-do-not-override-gzal6t).ant-menu-light
-  .ant-menu-item-selected,
-:where(.css-dev-only-do-not-override-gzal6t).ant-menu-light
-  > .ant-menu
-  .ant-menu-item-selected {
+:where(.css-gzal6t).ant-menu-light .ant-menu-item-selected,
+:where(.css-gzal6t).ant-menu-light > .ant-menu .ant-menu-item-selected {
   background-color: transparent !important;
 }
 
@@ -436,7 +433,7 @@
 }
 
 :where(.css-dev-only-do-not-override-gzal6t).ant-drawer .ant-drawer-body {
-  padding: 0;
+  padding: 0 !important;
 }
 
 .ant-drawer-content-wrapper {
@@ -460,7 +457,7 @@
   ).ant-menu-light.ant-menu-root.ant-menu-vertical,
 :where(.css-dev-only-do-not-override-gzal6t).ant-menu-light
   > .ant-menu.ant-menu-root.ant-menu-vertical {
-  border: none;
+  border: none !important;
 }
 
 .ant-layout-sider-trigger {
